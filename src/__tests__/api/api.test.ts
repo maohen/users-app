@@ -1,5 +1,4 @@
-import { render, screen, waitFor } from "@testing-library/react";
-import { describe, test, expect, vi, afterEach, beforeEach } from "vitest";
+import { describe, test, expect, vi, afterEach } from "vitest";
 import { getUserApi } from "../../shared/api/getUsers";
 
 describe('Pruebas en Api.ts', () => { 

@@ -1,5 +1,5 @@
-import { describe, test, expect, vi, Mock } from "vitest";
-import { render, screen, fireEvent } from "@testing-library/react";
+import { describe, test, expect, vi } from "vitest";
+import { render, screen } from "@testing-library/react";
 import { TableComponent } from "../../../../shared/components/templates/table/Table.component.tsx";
 import { columnsTable } from "../../../../shared/helpers/columsTable.tsx";
 import { useTableResults } from "../../../../shared/components/templates/table/useTableResults.tsx";

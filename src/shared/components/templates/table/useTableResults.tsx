@@ -29,7 +29,7 @@ export const useTableResults = () => {
       handleSetParams(paramsurl)
     };
     
-    const handleChangePage = (event: any, newPage: number) => {
+    const handleChangePage = (_event: any, newPage: number) => {
       const paramsurl: IParams = {
         ...params,
         page: newPage,
