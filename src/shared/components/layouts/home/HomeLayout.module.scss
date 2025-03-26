@@ -1,0 +1,11 @@
+@use '/src/styles' as *;
+
+.layout{
+    background: $primary;
+    min-height: 100vh;
+    padding: 2% 6%;
+
+    @media(max-width: 900px){
+        padding: 1% 3%;
+    }
+}

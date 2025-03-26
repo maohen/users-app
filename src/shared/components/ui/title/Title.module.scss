@@ -1,0 +1,6 @@
+// @use 'src/styles/abstracts/_colors.scss' as color;
+@use '/src/styles' as *;
+.title{
+    color: $white;
+    text-align: left;
+}

@@ -1,0 +1,77 @@
+$font1: 4.225rem;
+$font2: 2.225rem;
+$font3: 1.75rem;
+$font4: 1rem;
+$font5: .8rem;
+$font6: .7rem;
+$font7: .6rem;
+$fontLight: 300;
+$fontRegular: 400;
+$fontBold: 600;
+$fontExtraBold: 700;
+
+
+.font{
+  &-size{
+    &-1 {
+      font-size: $font1 !important;
+    }
+    &-2 {
+      font-size: $font2 !important;
+    }
+    &-3 {
+      font-size: $font3 !important;
+    }
+    &-4 {
+      font-size: $font4 !important;
+    }
+    &-5 {
+      font-size: $font5 !important;
+    }
+    &-6 {
+      font-size: $font6 !important;
+    }
+    &-7 {
+      font-size: $font7 !important;
+    }
+  }
+  
+
+  &-light {
+    font-weight: $fontLight;
+  }
+  &-regular {
+    font-weight: $fontRegular;
+  }
+  &-bold {
+    font-weight: $fontBold;
+  }
+  &-extrabold {
+    font-weight: $fontExtraBold;
+  }
+}
+
+@media(max-width: 900px) {
+  .font {
+    &-size {
+      &-1 {
+        font-size: $font2 !important;
+      }
+      &-2 {
+        font-size: $font3 !important;
+      }
+      &-3 {
+        font-size: $font4 !important;
+      }
+      &-4 {
+        font-size: $font5 !important;
+      }
+      &-5 {
+        font-size: $font6 !important;
+      }
+      &-6 {
+        font-size: $font7 !important;
+      }
+    }
+  }
+}

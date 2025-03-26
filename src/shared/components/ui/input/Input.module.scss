@@ -1,0 +1,24 @@
+@use '/src/styles' as *;
+
+.containerInput{
+    background: #fff;
+    border-radius: 1rem;
+    padding: .8rem;
+    display: flex;
+    align-items: center;
+    height: 38px;
+    box-shadow: inset 0px 3px 8px -3px 500;
+    width: -webkit-fill-available;
+
+    input{
+        width: -webkit-fill-available;
+        border: none;
+        color: $medium;
+        outline: none;
+    }
+
+    .iconSearch {
+        width: 1.3rem;
+        height: auto;
+      }
+}
