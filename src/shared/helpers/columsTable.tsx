@@ -9,7 +9,7 @@ export const columnsTable = ():ITableElement<any>[] => {
             headerName: 'Imagen',
             minWidth: 70,
             renderCell(params:IUser) {
-                return (<img src={params.picture.thumbnail} alt="avatar" width="40" height="40" loading='lazy'/>)
+                return (<img src={params?.picture?.thumbnail} alt="avatar" width="40" height="40" loading='lazy'/>)
             }
         },
         {
@@ -17,7 +17,7 @@ export const columnsTable = ():ITableElement<any>[] => {
             headerName: 'Nombre completo',
             minWidth: 160,
             renderCell(params:IUser) {
-                return (<div>{`${params.name.first} ${params.name.last}`}</div>)
+                return (<div>{`${params?.name?.first} ${params.name.last}`}</div>)
             }
         },
         {
@@ -49,7 +49,7 @@ export const columnsTable = ():ITableElement<any>[] => {
             headerName: 'Residencia',
             minWidth: 160,
             renderCell(params:IUser) {
-                return (<div>{params.location.country}</div>)
+                return (<div>{params?.location?.country}</div>)
             }
         },
     ]

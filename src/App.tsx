@@ -9,12 +9,12 @@ const UsersLazy = lazy(() => import('./shared/components/features/users/Users'))
 function App() {
   return (
     <UserProvider>
-          <Suspense fallback={<Spinner />}>
-          <HomeLayout>
-            <UsersLazy />
-          </HomeLayout>
-          </Suspense>
-      </UserProvider>
+      <Suspense fallback={<Spinner />}>
+      <HomeLayout>
+        <UsersLazy />
+      </HomeLayout>
+      </Suspense>
+    </UserProvider>
   );
 }
 

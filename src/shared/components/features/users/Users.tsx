@@ -7,9 +7,8 @@ import { Spinner } from "../../ui";
 import { Icontent } from "../../../context/interfaces/users";
 
 export default function Users() {
-    const { users, handleSetUser, params } = useUser();
+    const { handleSetUser, params } = useUser();
     const valuesResultsPages = [ 50, params.totalElements/5, params.totalElements/2, params.totalElements ];
-    const [ isSearch, setIsSearch ] = useState(true);
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
@@ -31,7 +30,6 @@ export default function Users() {
           <TableComponent
             columns={columnsTable()}
             valuesResultsPages={valuesResultsPages}
-            isSearch={isSearch}
             title="Listado de Usuarios"
           />
 

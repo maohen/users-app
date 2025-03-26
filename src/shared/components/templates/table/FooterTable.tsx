@@ -1,6 +1,5 @@
 import { Box, FormControl, InputLabel, MenuItem, Pagination, PaginationItem, Select } from '@mui/material'
 import styles from "./tableComponent.module.scss";
-import { KeyboardArrowLeft, KeyboardArrowRight } from '@mui/icons-material'
 import { IFooterTableProps } from '../../interfaces/table.interface'
 
 export const FooterTable = ({handleChangePage, handleChangeSizePage, numberPage, size, sizeRows, totalElements, valuesResultsPages}: IFooterTableProps) => {
@@ -41,8 +40,8 @@ export const FooterTable = ({handleChangePage, handleChangeSizePage, numberPage,
             renderItem={(item) => (
             <PaginationItem
                 slots={{
-                    previous: () => <Box className={styles.botonPaginador}><KeyboardArrowLeft /><p>Ant.</p></Box>,
-                    next: () => <Box className={styles.botonPaginador}><p>Sig.</p><KeyboardArrowRight /></Box>
+                    previous: () => <Box className={styles.botonPaginador}><p>{`<Ant.`}</p></Box>,
+                    next: () => <Box className={styles.botonPaginador}><p>{`Sig.>`}</p></Box>
                 }}
                 {...item}
             />

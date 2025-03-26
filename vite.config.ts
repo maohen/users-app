@@ -21,7 +21,8 @@ export default defineConfig({
     transformMode: {
       web: [/\.[jt]sx?$/],
     },
-    setupFiles: './setupVitest.ts',
+    setupFiles: '/setupVitest.ts',
+    maxConcurrency: 2
   },
   build: {
     target: 'esnext',
